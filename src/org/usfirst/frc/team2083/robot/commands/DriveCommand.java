@@ -1,10 +1,9 @@
 
-package org.usfirst.frc2083.TeamBlitzRobot2015.commands;
+package org.usfirst.frc.team2083.robot.commands;
 
 import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.Relay;
 
-import org.usfirst.frc2083.TeamBlitzRobot2015.RobotMap;
+import org.usfirst.frc.team2083.robot.RobotMap;
 
 /**
  *
@@ -53,7 +52,7 @@ public class DriveCommand extends CommandBase {
     		if (Math.abs(X) < 0.1) X = 0;
     		if (Math.abs(Y) < 0.1) Y = 0;
     		X = X*Math.abs(X);
-    		Y = Y*Math.abs(Y)*.5;
+    		Y = Y*Math.abs(Y);
     	}
 
     	System.out.println("Y = " + Y);

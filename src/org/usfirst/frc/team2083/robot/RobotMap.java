@@ -9,7 +9,7 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc2083.TeamBlitzRobot2015;
+package org.usfirst.frc.team2083.robot;
     
 import edu.wpi.first.wpilibj.*;
 
@@ -23,10 +23,11 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
  */
 public class RobotMap {
 
-    public static final int leftForwardMotorControllerID = 12;
+	// Drive wheels
+    public static final int leftForwardMotorControllerID = 1;
     public static final int leftBackMotorControllerID = 7;
-    public static final int rightForwardMotorControllerID = 1;
-    public static final int rightBackMotorControllerID = 8;
+    public static final int rightForwardMotorControllerID = 8;
+    public static final int rightBackMotorControllerID = 12;
 
     public static CANJaguar leftForwardMotorController;
     public static CANJaguar leftBackMotorController;
@@ -38,21 +39,17 @@ public class RobotMap {
     public static double autoTimer = -1;
     public static double autoDriveTime = 0;
     public static int autoDistSelectChannel = 5;
-    
 
+    // Arm
+    public static final int armBarMotorControllerID = 18;
+    public static CANTalon armBarMotorController;
+
+    // Controller
     public static int downButton = 4;
     public static int upButton = 3;
     public static int openButton = 2;
     public static int closeButton = 1;
 
-    public static CANJaguar gripperLeftMotorController;
-    public static CANJaguar gripperRightMotorController;
-    public static CANTalon fourBarMotorController;
-    public static final int gripperLeftMotorControllerID = 5;
-    public static final int gripperRightMotorControllerID = 2;
-    public static final int fourBarMotorControllerID = 3;
-    public static final double gripperMotorVoltageLimit = 9.0;
-    public static final double gripperMotorCurrentLimit = 15.0;
     public static final int xboxLeftTriggerAxisNum = 2; 
     public static final int xboxRightTriggerAxisNum = 3; 
 
